@@ -1,6 +1,5 @@
 dkms
 mesa
-intel-vaapi-driver
 pipewire
 pipewire-audio
 wireplumber
