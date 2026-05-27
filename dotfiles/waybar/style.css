@@ -1,0 +1,51 @@
+/* ===================================================================
+   ESTILO WAYBAR - PASTILLA FLOTANTE MOCHA (SIX)
+   =================================================================== */
+
+/* Configuración de la barra base */
+window#waybar {
+    background-color: rgba(30, 30, 46, 0.9); /* Gris oscuro Mocha con opacidad */
+    border: 2px solid #313244;               /* Borde sutil */
+    border-radius: 24px;                     /* Esquinas bien redondeadas */
+    color: #cdd6f4;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+/* Transparente cuando no hay ventanas (opcional de Waybar, lo forzamos limpio) */
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/* Estilo para el contenedor de los iconos de aplicaciones */
+#taskbar {
+    padding: 0px 10px;
+}
+
+/* Estilo para cada botón de aplicación en el dock */
+#taskbar button {
+    padding: 4px 12px;
+    margin: 4px 2px;
+    border-radius: 16px;
+    color: #cdd6f4;
+    background: transparent;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+/* Comportamiento al pasar el mouse por encima de una app */
+#taskbar button:hover {
+    background-color: #45475a; /* Gris un poco más claro al hacer hover */
+}
+
+/* Estilo exclusivo para la aplicación que tienes enfocada/abierta en pantalla */
+#taskbar button.active {
+    background-color: #313244; /* Resaltado sutil para la ventana activa */
+    border-bottom: 3px solid #cdd6f4; /* Línea inferior indicadora blanca/clara */
+    border-radius: 12px;
+}
+
+/* Quita estilos extraños que mete GTK por defecto */
+#taskbar button label {
+    padding: 0;
+}

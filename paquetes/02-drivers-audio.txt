@@ -1,0 +1,13 @@
+dkms
+mesa
+intel-vaapi-driver
+pipewire
+pipewire-audio
+wireplumber
+alsa-utils
+pamixer
+pipewire-alsa
+pipewire-pulse
+pavucontrol
+xdg-desktop-portal
+xdg-desktop-portal-hyprland

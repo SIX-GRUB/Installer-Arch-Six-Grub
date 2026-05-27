@@ -1,0 +1,4 @@
+rtl8188fu-dkms-git
+microsoft-edge-stable-bin
+visual-studio-code-bin
+hyprpolkitagent

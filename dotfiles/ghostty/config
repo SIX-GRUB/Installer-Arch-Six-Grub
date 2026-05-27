@@ -1,0 +1,20 @@
+# ===================================================================
+#                  CONFIGURACIÓN DE GHOSTTY (SIX)
+# ===================================================================
+
+# Fuentes
+font-family = "JetBrainsMono Nerd Font"
+font-size = 11
+
+# Estilo de Ventana y Bordes
+window-decoration = false
+window-padding-x = 12
+window-padding-y = 12
+
+# Tema de Color Oscuro (Catppuccin Mocha)
+theme = catppuccin-mocha
+
+# Rendimiento y Comportamiento
+cursor-style = block
+cursor-blink = true
+scrollback-limit = 10000

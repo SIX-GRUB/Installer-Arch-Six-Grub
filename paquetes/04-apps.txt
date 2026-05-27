@@ -1,0 +1,15 @@
+ghostty
+thunar
+gvfs
+gvfs-mtp
+thunar-volman
+file-roller
+p7zip
+unrar
+unzip
+zip
+grim
+slurp
+loupe
+mpv
+obsidian

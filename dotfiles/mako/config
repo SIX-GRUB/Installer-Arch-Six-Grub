@@ -1,0 +1,30 @@
+# ===================================================================
+#                    CONFIGURACIÓN DE MAKO (SIX)
+# ===================================================================
+
+# Estilo General de las Ventanas de Notificación
+font=JetBrainsMono Nerd Font 10
+width=300
+height=110
+margin=10,10
+padding=15
+border-size=2
+border-radius=10
+layer=top
+anchor=top-right
+
+# Tiempos de Espera (en milisegundos)
+default-timeout=5000
+ignore-borders=0
+
+# Colores - Tema Oscuro (Catppuccin Mocha)
+background-color=#1e1e2e
+text-color=#cdd6f4
+border-color=#313244
+progress-color=source #313244
+
+# Estilo para Notificaciones de Alta Prioridad (Urgentes)
+[urgency=high]
+border-color=#f38ba8
+text-color=#f38ba8
+default-timeout=0

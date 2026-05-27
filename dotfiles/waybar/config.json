@@ -1,0 +1,28 @@
+{
+    "_comment1": "Posición y dimensiones estilo Dock",
+    "layer": "top",
+    "position": "bottom",
+    "height": 46,
+    "margin-bottom": 10,
+    "margin-left": 10,
+    "margin-right": 10,
+    
+    "_comment2": "Módulos a cargar (Solo la barra de tareas en el centro)",
+    "modules-left": [],
+    "modules-center": ["wlr/taskbar"],
+    "modules-right": [],
+
+    "_comment3": "Configuración específica de la barra de tareas",
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 24,
+        "icon-theme": "Numix-Circle",
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "ignore-list": [],
+        "app_ids-mapping": {
+            "firefoxdeveloperedition": "firefox-developer-edition"
+        }
+    }
+}
