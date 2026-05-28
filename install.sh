@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Salir inmediatamente si ocurre un error
-set -e
-
 # Colores para la terminal
 GREEN="\e[32m"
 BLUE="\e[34m"
@@ -29,10 +26,13 @@ done
 # 3. INSTALACIÓN DE YAY (AUR Helper)
 if ! command -v yay &> /dev/null; then
     echo -e "\n${GREEN}[3/6] 'yay' no detectado. Instalando AUR helper...${ENDCOLOR}"
+    # Pedimos sudo antes para que refresque el token y no pida clave a ciegas al final
+    sudo echo -e "${GREEN}[+] Permisos concedidos para la compilación.${ENDCOLOR}"
     mkdir -p /tmp/yay-build
     git clone https://aur.archlinux.org/yay.git /tmp/yay-build
     cd /tmp/yay-build
-    makepkg -si --noconfirm
+    # Usamos la bandera para que asuma todas las respuestas de pacman como sí
+    makepkg -si --noconfirm --asdeps
     cd -
     rm -rf /tmp/yay-build
 else
